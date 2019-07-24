@@ -35,6 +35,7 @@
             this.txtid = new System.Windows.Forms.TextBox();
             this.lblpasswd1 = new System.Windows.Forms.Label();
             this.lblid = new System.Windows.Forms.Label();
+            this.btnSEdit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -115,12 +116,23 @@
             this.lblid.TabIndex = 9;
             this.lblid.Text = "사원번호";
             // 
+            // btnSEdit
+            // 
+            this.btnSEdit.Location = new System.Drawing.Point(13, 13);
+            this.btnSEdit.Name = "btnSEdit";
+            this.btnSEdit.Size = new System.Drawing.Size(112, 31);
+            this.btnSEdit.TabIndex = 16;
+            this.btnSEdit.Text = "통신설정";
+            this.btnSEdit.UseVisualStyleBackColor = true;
+            this.btnSEdit.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(520, 385);
+            this.Controls.Add(this.btnSEdit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnJoin);
@@ -147,5 +159,6 @@
         private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Label lblpasswd1;
         private System.Windows.Forms.Label lblid;
+        private System.Windows.Forms.Button btnSEdit;
     }
 }

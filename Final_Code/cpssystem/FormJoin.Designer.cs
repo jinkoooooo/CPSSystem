@@ -38,7 +38,7 @@
             this.lblposition = new System.Windows.Forms.Label();
             this.txtPasswdck = new System.Windows.Forms.TextBox();
             this.lblpasswdck = new System.Windows.Forms.Label();
-            this.txtPasswdj = new System.Windows.Forms.TextBox();
+            this.txtPasswd = new System.Windows.Forms.TextBox();
             this.lblpasswd = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblname = new System.Windows.Forms.Label();
@@ -49,11 +49,11 @@
             // 
             this.btnReset.BackColor = System.Drawing.Color.White;
             this.btnReset.Font = new System.Drawing.Font("Rix정고딕 B", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnReset.Location = new System.Drawing.Point(97, 484);
+            this.btnReset.Location = new System.Drawing.Point(88, 484);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(125, 44);
             this.btnReset.TabIndex = 37;
-            this.btnReset.Text = "다시쓰기";
+            this.btnReset.Text = "가입취소";
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
@@ -143,6 +143,7 @@
             this.txtPasswdck.Name = "txtPasswdck";
             this.txtPasswdck.Size = new System.Drawing.Size(240, 29);
             this.txtPasswdck.TabIndex = 29;
+            this.txtPasswdck.Leave += new System.EventHandler(this.TxtPasswdck_Leave);
             // 
             // lblpasswdck
             // 
@@ -155,14 +156,14 @@
             this.lblpasswdck.TabIndex = 28;
             this.lblpasswdck.Text = "비밀번호확인";
             // 
-            // txtPasswdj
+            // txtPasswd
             // 
-            this.txtPasswdj.Font = new System.Drawing.Font("Rix정고딕 B", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtPasswdj.Location = new System.Drawing.Point(196, 171);
-            this.txtPasswdj.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPasswdj.Name = "txtPasswdj";
-            this.txtPasswdj.Size = new System.Drawing.Size(240, 29);
-            this.txtPasswdj.TabIndex = 27;
+            this.txtPasswd.Font = new System.Drawing.Font("Rix정고딕 B", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtPasswd.Location = new System.Drawing.Point(196, 171);
+            this.txtPasswd.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPasswd.Name = "txtPasswd";
+            this.txtPasswd.Size = new System.Drawing.Size(240, 29);
+            this.txtPasswd.TabIndex = 27;
             // 
             // lblpasswd
             // 
@@ -212,8 +213,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(497, 563);
+            this.ControlBox = false;
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnJoinDB);
             this.Controls.Add(this.cmbDepartment);
@@ -224,7 +226,7 @@
             this.Controls.Add(this.lblposition);
             this.Controls.Add(this.txtPasswdck);
             this.Controls.Add(this.lblpasswdck);
-            this.Controls.Add(this.txtPasswdj);
+            this.Controls.Add(this.txtPasswd);
             this.Controls.Add(this.lblpasswd);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblname);
@@ -248,7 +250,7 @@
         private System.Windows.Forms.Label lblposition;
         private System.Windows.Forms.TextBox txtPasswdck;
         private System.Windows.Forms.Label lblpasswdck;
-        private System.Windows.Forms.TextBox txtPasswdj;
+        private System.Windows.Forms.TextBox txtPasswd;
         private System.Windows.Forms.Label lblpasswd;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblname;

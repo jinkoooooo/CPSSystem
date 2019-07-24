@@ -70,15 +70,8 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="papagoAPI.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SocketEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SocketEdit.Designer.cs">
-      <DependentUpon>SocketEdit.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="FormJoin.resx">
       <DependentUpon>FormJoin.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,9 +93,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SocketEdit.resx">
-      <DependentUpon>SocketEdit.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
